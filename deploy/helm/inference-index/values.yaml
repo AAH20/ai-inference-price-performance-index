@@ -1,0 +1,15 @@
+image:
+  repository: ghcr.io/aah20/ai-inference-price-performance-index
+  tag: latest
+  pullPolicy: IfNotPresent
+
+workloadFile: /data/workload.json
+datasetFile: /data/index.json
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+

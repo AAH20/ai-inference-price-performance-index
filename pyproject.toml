@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-inference-price-performance-index"
+version = "0.1.0"
+description = "Reproducible LLM inference economics, quality and architecture recommendations."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Ahmed Hassan" }]
+keywords = ["llm-inference", "gpu", "nvidia-nim", "vllm", "ai-finops", "kubernetes"]
+dependencies = []
+
+[project.scripts]
+inference-index = "inference_index.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/inference_index"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

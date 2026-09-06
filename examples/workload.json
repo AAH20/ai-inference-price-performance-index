@@ -1,0 +1,11 @@
+{
+  "requests_per_month": 1000000,
+  "input_tokens": 4000,
+  "output_tokens": 800,
+  "required_quality": 0.85,
+  "p95_latency_ms": 2500,
+  "availability": 0.999,
+  "region": "eastus2",
+  "data_residency": "US"
+}
+

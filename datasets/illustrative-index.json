@@ -1,0 +1,51 @@
+[
+  {
+    "provider": "Azure AI Foundry",
+    "model": "frontier-managed-example",
+    "runtime": "managed-api",
+    "hardware": "provider-managed",
+    "region": "eastus2",
+    "input_usd_per_million": 2.5,
+    "output_usd_per_million": 10.0,
+    "fixed_monthly_usd": 400.0,
+    "p95_latency_ms": 1800,
+    "quality_score": 0.91,
+    "success_rate": 0.985,
+    "availability": 0.9995,
+    "throughput_tokens_second": 85.0,
+    "evidence": "illustrative-not-a-vendor-quote"
+  },
+  {
+    "provider": "Azure Kubernetes Service",
+    "model": "open-weight-70b-example",
+    "runtime": "vllm",
+    "hardware": "2x NVIDIA GPU",
+    "region": "eastus2",
+    "input_usd_per_million": 0.35,
+    "output_usd_per_million": 0.35,
+    "fixed_monthly_usd": 12500.0,
+    "p95_latency_ms": 1450,
+    "quality_score": 0.86,
+    "success_rate": 0.972,
+    "availability": 0.9995,
+    "throughput_tokens_second": 210.0,
+    "evidence": "illustrative-not-a-vendor-quote"
+  },
+  {
+    "provider": "NVIDIA NIM on Kubernetes",
+    "model": "nim-optimized-example",
+    "runtime": "nvidia-nim",
+    "hardware": "NVIDIA GPU pool",
+    "region": "eastus2",
+    "input_usd_per_million": 0.55,
+    "output_usd_per_million": 0.55,
+    "fixed_monthly_usd": 9400.0,
+    "p95_latency_ms": 1200,
+    "quality_score": 0.88,
+    "success_rate": 0.98,
+    "availability": 0.9995,
+    "throughput_tokens_second": 260.0,
+    "evidence": "illustrative-not-a-vendor-quote"
+  }
+]
+
